@@ -1,19 +1,20 @@
 {
-  "name": "@himenon/template-js",
-  "version": "0.4.0",
-  "description": "node library template",
+  "name": "@himenon/kubernetes-typescript-openapi",
+  "version": "1.0.0",
+  "description": "Implementation of TypeScript generated from Kubernetes OpenAPI",
   "keywords": [
-    "template",
-    "proxy directory",
-    "typescript"
+    "Kubernetes",
+    "k8s",
+    "OpenAPI",
+    "Swagger"
   ],
-  "homepage": "https://github.com/Himenon/template-js#readme",
+  "homepage": "https://github.com/Himenon/k8s-typescript-openapi#readme",
   "bugs": {
-    "url": "https://github.com/Himenon/template-js/issues"
+    "url": "https://github.com/Himenon/k8s-typescript-openapi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Himenon/template-js.git"
+    "url": "git@github.com:Himenon/k8s-typescript-openapi.git"
   },
   "license": "MIT",
   "author": {
