@@ -23,50 +23,6 @@
     "url": "https://github.com/Himenon"
   },
   "sideEffects": false,
-  "exports": {
-    "./v1.14.10": {
-      "node": "./lib/$cjs/v1.14.10.js",
-      "require": "./lib/$cjs/v1.14.10.js",
-      "import": "./lib/$esm/v1.14.10.js",
-      "default": "./lib/$cjs/v1.14.10.js"
-    },
-    "./v1.15.12": {
-      "node": "./lib/$cjs/v1.15.12.js",
-      "require": "./lib/$cjs/v1.15.12.js",
-      "import": "./lib/$esm/v1.15.12.js",
-      "default": "./lib/$cjs/v1.15.12.js"
-    },
-    "./v1.16.15": {
-      "node": "./lib/$cjs/v1.16.15.js",
-      "require": "./lib/$cjs/v1.16.15.js",
-      "import": "./lib/$esm/v1.16.15.js",
-      "default": "./lib/$cjs/v1.16.15.js"
-    },
-    "./v1.17.17": {
-      "node": "./lib/$cjs/v1.17.17.js",
-      "require": "./lib/$cjs/v1.17.17.js",
-      "import": "./lib/$esm/v1.17.17.js",
-      "default": "./lib/$cjs/v1.17.17.js"
-    },
-    "./v1.18.20": {
-      "node": "./lib/$cjs/v1.18.20.js",
-      "require": "./lib/$cjs/v1.18.20.js",
-      "import": "./lib/$esm/v1.18.20.js",
-      "default": "./lib/$cjs/v1.18.20.js"
-    },
-    "./v1.19.16": {
-      "node": "./lib/$cjs/v1.19.16.js",
-      "require": "./lib/$cjs/v1.19.16.js",
-      "import": "./lib/$esm/v1.19.16.js",
-      "default": "./lib/$cjs/v1.19.16.js"
-    },
-    "./v1.22.3": {
-      "node": "./lib/$cjs/v1.22.3.js",
-      "require": "./lib/$cjs/v1.22.3.js",
-      "import": "./lib/$esm/v1.22.3.js",
-      "default": "./lib/$cjs/v1.22.3.js"
-    }
-  },
   "main": "./lib/$cjs/index.js",
   "module": "./lib/$esm/index.js",
   "types": "./lib/$types/index.d.ts",
@@ -115,6 +71,7 @@
     "@types/rimraf": "3.0.2",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "cherry-pick": "^0.5.0",
     "conventional-changelog-angular-all": "1.7.0",
     "cpy": "8.1.2",
     "dependency-cruiser": "10.6.0",
