@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.4.0"></a>
+
+# 0.4.0 (2021-11-08)
+
+### Features
+
+- Add kubernetes clients ([799f10d](https://github.com/Himenon/template-js/commit/799f10d))
+
 <a name="0.3.0"></a>
 
 # 0.3.0 (2021-11-07)
