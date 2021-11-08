@@ -25,6 +25,11 @@ module.exports = {
      */
   forbidden: [
     {
+      name: "no-orphans",
+      comment: "Warn about orphans",
+      severity: "warn",
+    },
+    {
       name: "not-to-test",
       comment:
         "This module depends on code within a folder that should only contain tests. As tests don't " +

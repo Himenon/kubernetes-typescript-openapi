@@ -1,19 +1,20 @@
 {
-  "name": "@himenon/template-js",
-  "version": "0.4.0",
-  "description": "node library template",
+  "name": "@himenon/kubernetes-typescript-openapi",
+  "version": "1.0.0",
+  "description": "Implementation of TypeScript generated from Kubernetes OpenAPI",
   "keywords": [
-    "template",
-    "proxy directory",
-    "typescript"
+    "Kubernetes",
+    "k8s",
+    "OpenAPI",
+    "Swagger"
   ],
-  "homepage": "https://github.com/Himenon/template-js#readme",
+  "homepage": "https://github.com/Himenon/kubernetes-typescript-openapi#readme",
   "bugs": {
-    "url": "https://github.com/Himenon/template-js/issues"
+    "url": "https://github.com/Himenon/kubernetes-typescript-openapi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Himenon/template-js.git"
+    "url": "git@github.com:Himenon/kubernetes-typescript-openapi.git"
   },
   "license": "MIT",
   "author": {
@@ -88,13 +89,12 @@
     "generate:code": "yarn ts ./scripts/generateCode.ts",
     "release:github:registry": "yarn publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "yarn publish",
-    "test": "run-s depcruise:validate jest eslint:validate prettier:validate",
+    "test": "run-s depcruise:validate eslint:validate prettier:validate",
     "prettier:format": "prettier \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md,html}\" --write ./src",
     "prettier:validate": "prettier --check \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md,html}\"",
     "eslint:format": "eslint \"**/*.{ts,tsx}\" --fix",
     "eslint:validate": "eslint \"**/*.{ts,tsx}\"",
     "depcruise:validate": "depcruise --validate .dependency-cruiser.js src",
-    "jest": "jest -c ./jest.config.js",
     "ts": "ts-node -P tsconfig.build.json"
   },
   "simple-git-hooks": {
