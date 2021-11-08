@@ -1,28 +1,28 @@
-# @Himenon/template-js
+# @himenon/kubernetes-typescript-openapi
 
-## Usage
+```bash
+yarn add -D @himenon/kubernetes-typescript-openapi
+```
 
-| scripts                   | description                                 |
-| :------------------------ | :------------------------------------------ |
-| `build`                   | typescript build and create proxy directory |
-| `clean`                   | clean up                                    |
-| `format:code`             | prettier                                    |
-| `format:yarn:lock`        | yarn.lock deduplicate                       |
-| `lerna:version:up`        | lerna version up                            |
-| `test`                    | execute test:depcruise, test:jest           |
-| `test:depcruise`          | dependency-cruiser's test                   |
-| `test:jest`               | jest test                                   |
-| `ts`                      | execute ts-node                             |
-| `release:github:registry` | publish github registry                     |
-| `release:npm:registry`    | publish npm registry                        |
+## Build
 
-## Features
+```ts
+yarn run build
+```
 
-- [Proxy Directory](https://himenon.github.io/docs/javascript/proxy-directory-design-pattern/)
+## OpenAPI Source for Kubernetes
 
-## Release
+- <https://github.com/kubernetes/kubernetes/blob/master/api/openapi-spec/swagger.json>
 
-- Automatic version updates are performed when merged into the `main` branch.
+## OpenAPI TypeScript Code Generator
+
+* [@himenon/openapi-typescript-code-generator](https://github.com/Himenon/openapi-typescript-code-generator)
+
+You can also just use the type definition
+
+## Use Another Version
+
+Edit [config.ts](./scripts/config.ts)
 
 ## LICENCE
 

@@ -22,19 +22,48 @@
     "url": "https://github.com/Himenon"
   },
   "sideEffects": false,
-  "type": "module",
   "exports": {
-    ".": {
-      "node": "./lib/$cjs/index.js",
-      "require": "./lib/$cjs/index.js",
-      "import": "./lib/$esm/index.js",
-      "default": "./lib/$cjs/index.js"
+    "./v1.14.10": {
+      "node": "./lib/$cjs/v1.14.10.js",
+      "require": "./lib/$cjs/v1.14.10.js",
+      "import": "./lib/$esm/v1.14.10.js",
+      "default": "./lib/$cjs/v1.14.10.js"
     },
-    "./sub": {
-      "node": "./lib/$cjs/sub.js",
-      "require": "./lib/$cjs/sub.js",
-      "import": "./lib/$esm/sub.js",
-      "default": "./lib/$cjs/sub.js"
+    "./v1.15.12": {
+      "node": "./lib/$cjs/v1.15.12.js",
+      "require": "./lib/$cjs/v1.15.12.js",
+      "import": "./lib/$esm/v1.15.12.js",
+      "default": "./lib/$cjs/v1.15.12.js"
+    },
+    "./v1.16.15": {
+      "node": "./lib/$cjs/v1.16.15.js",
+      "require": "./lib/$cjs/v1.16.15.js",
+      "import": "./lib/$esm/v1.16.15.js",
+      "default": "./lib/$cjs/v1.16.15.js"
+    },
+    "./v1.17.17": {
+      "node": "./lib/$cjs/v1.17.17.js",
+      "require": "./lib/$cjs/v1.17.17.js",
+      "import": "./lib/$esm/v1.17.17.js",
+      "default": "./lib/$cjs/v1.17.17.js"
+    },
+    "./v1.18.20": {
+      "node": "./lib/$cjs/v1.18.20.js",
+      "require": "./lib/$cjs/v1.18.20.js",
+      "import": "./lib/$esm/v1.18.20.js",
+      "default": "./lib/$cjs/v1.18.20.js"
+    },
+    "./v1.19.16": {
+      "node": "./lib/$cjs/v1.19.16.js",
+      "require": "./lib/$cjs/v1.19.16.js",
+      "import": "./lib/$esm/v1.19.16.js",
+      "default": "./lib/$cjs/v1.19.16.js"
+    },
+    "./v1.22.3": {
+      "node": "./lib/$cjs/v1.22.3.js",
+      "require": "./lib/$cjs/v1.22.3.js",
+      "import": "./lib/$esm/v1.22.3.js",
+      "default": "./lib/$cjs/v1.22.3.js"
     }
   },
   "main": "./lib/$cjs/index.js",
@@ -50,11 +79,13 @@
   ],
   "scripts": {
     "build": "yarn ts ./scripts/build.ts",
+    "build:all": "run-s fetch:schemas generate:code",
     "clean": "yarn ts ./scripts/clean.ts",
     "fetch:schemas": "yarn ts ./scripts/fetchSchema.ts",
     "format:code": "run-s prettier:format eslint:format",
     "format:yarn:lock": "yarn-deduplicate yarn.lock --strategy highest",
     "lerna:version:up": "lerna version --yes",
+    "generate:code": "yarn ts ./scripts/generateCode.ts",
     "release:github:registry": "yarn publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "yarn publish",
     "test": "run-s depcruise:validate jest eslint:validate prettier:validate",
@@ -64,7 +95,7 @@
     "eslint:validate": "eslint \"**/*.{ts,tsx}\"",
     "depcruise:validate": "depcruise --validate .dependency-cruiser.js src",
     "jest": "jest -c ./jest.config.js",
-    "ts": "node --experimental-loader=ts-node/esm --es-module-specifier-resolution=node"
+    "ts": "ts-node -P tsconfig.build.json"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -77,9 +108,10 @@
   "devDependencies": {
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
+    "@himenon/openapi-typescript-code-generator": "^0.11.0",
     "@types/jest": "27.0.2",
     "@types/node": "16.11.6",
-    "@types/node-fetch": "^3.0.3",
+    "@types/node-fetch": "2.5.12",
     "@types/rimraf": "3.0.2",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
@@ -95,7 +127,7 @@
     "jest-cli": "27.3.1",
     "lerna": "4.0.0",
     "lint-staged": "11.2.6",
-    "node-fetch": "^3.0.0",
+    "node-fetch": "^2.6.6",
     "npm-run-all": "4.1.5",
     "prettier": "2.4.1",
     "rimraf": "3.0.2",
