@@ -1,10 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import rimraf from "rimraf";
 import { shell } from "./tools/shell";
-import { generateExportsField } from "./tools/dualPackageSupport";
-import * as fs from "fs";
-import { EOL } from "os";
-import pkg from "../package.json";
+import { copyPackageSet } from "./tools/copyPackageSet";
 
 const main = async () => {
   rimraf.sync("lib");
@@ -13,20 +10,8 @@ const main = async () => {
     shell("yarn tsc -p tsconfig.cjs.json"),
     shell("yarn tsc -p tsconfig.esm.json"),
   ]);
-
-  const exportsFiled = generateExportsField("./src", {
-    directory: {
-      node: "./lib/$cjs",
-      require: "./lib/$cjs",
-      import: "./lib/$esm",
-      default: "./lib/$cjs",
-    },
-  });
-
-  // @ts-ignore
-  pkg.exports = exportsFiled;
-
-  fs.writeFileSync("package.json", JSON.stringify(pkg, null, 2) + EOL, { encoding: "utf-8" });
+  await shell("cherry-pick --cwd ./lib --input-dir ../src --types-dir ./\\$types --cjs-dir ./\\$cjs --esm-dir ./\\$esm");
+  await copyPackageSet();
 };
 
 main().catch(error => {
