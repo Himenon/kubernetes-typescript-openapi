@@ -78,4 +78,4 @@ Edit [config.ts](./scripts/config.ts)
 
 ## LICENCE
 
-[@Himenon/template-js](https://github.com/Himenon/template-js)・MIT
+[@Himenon/kubernetes-typescript-openapi](https://github.com/Himenon/kubernetes-typescript-openapi)・MIT
