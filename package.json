@@ -8,13 +8,13 @@
     "OpenAPI",
     "Swagger"
   ],
-  "homepage": "https://github.com/Himenon/k8s-typescript-openapi#readme",
+  "homepage": "https://github.com/Himenon/kubernetes-typescript-openapi#readme",
   "bugs": {
-    "url": "https://github.com/Himenon/k8s-typescript-openapi/issues"
+    "url": "https://github.com/Himenon/kubernetes-typescript-openapi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Himenon/k8s-typescript-openapi.git"
+    "url": "git@github.com:Himenon/kubernetes-typescript-openapi.git"
   },
   "license": "MIT",
   "author": {
