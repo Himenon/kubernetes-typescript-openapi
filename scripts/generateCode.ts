@@ -12,7 +12,9 @@ const task = async (filename: string, outputFilename: string): Promise<void> => 
     codeGenerator.getAdditionalTypeDefinitionCustomCodeGenerator(),
     {
       generator: Templates.ApiClient.generator,
-      option: {},
+      option: {
+        additionalMethodComment: true,
+      },
     },
   ]);
   fs.writeFileSync(outputFilename, code, { encoding: "utf-8" });
