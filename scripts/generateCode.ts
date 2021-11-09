@@ -3,11 +3,33 @@ import * as path from "path";
 import rimraf from "rimraf";
 import { outputDir, versions, sourceOutputDir } from "./config";
 
-import { CodeGenerator } from "@himenon/openapi-typescript-code-generator";
+import { CodeGenerator, Option } from "@himenon/openapi-typescript-code-generator";
 import * as Templates from "@himenon/openapi-typescript-code-generator/templates";
 
 const task = async (filename: string, outputFilename: string): Promise<void> => {
-  const codeGenerator = new CodeGenerator(filename);
+  const option: Option = {
+    convertOption: {
+      formatConversions: [
+        {
+          selector: {
+            format: "int-or-string",
+          },
+          output: {
+            type: ["number", "string"],
+          },
+        },
+        {
+          selector: {
+            format: "byte",
+          },
+          output: {
+            type: ["Blob"],
+          },
+        },
+      ],
+    },
+  };
+  const codeGenerator = new CodeGenerator(filename, option);
   const code = codeGenerator.generateTypeDefinition([
     codeGenerator.getAdditionalTypeDefinitionCustomCodeGenerator(),
     {
