@@ -611,10 +611,10 @@
   resolved "https://registry.yarnpkg.com/@exodus/schemasafe/-/schemasafe-1.0.0-rc.6.tgz#7985f681564cff4ffaebb5896eb4be20af3aae7a"
   integrity sha512-dDnQizD94EdBwEj/fh3zPRa/HWCS9O5au2PuHhZBbuM3xWHxuaKzPBOEWze7Nn0xW68MIpZ7Xdyn1CoCpjKCuQ==
 
-"@himenon/openapi-typescript-code-generator@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@himenon/openapi-typescript-code-generator/-/openapi-typescript-code-generator-0.11.0.tgz#a966969edcfa9d192450f8c0956b1fe26e1c72b0"
-  integrity sha512-rFLw/tMzwIq3DoVywgZzF/KB+2NGp6vgkORVvL5I/lhWVN1XrFdbT1VOy+hfydCzrPxvXj1uCp2rYZRM6W3f0g==
+"@himenon/openapi-typescript-code-generator@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@himenon/openapi-typescript-code-generator/-/openapi-typescript-code-generator-0.12.0.tgz#1695279e8d78c29218fb439e8ab0328d407abf01"
+  integrity sha512-0y3mxCrB2EQq5Mhi8YWq70283Ty5eZap5mvP88RR5ljzVPW0h8Ji+jfMg7I0wvm127DEQuEUoSkrIz8dMyrp6g==
   dependencies:
     "@himenon/path-oriented-data-structure" "0.1.3"
     "@types/json-schema" "7.0.7"
