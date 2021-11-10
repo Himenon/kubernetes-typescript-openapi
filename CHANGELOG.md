@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.3.0"></a>
+
+# 1.3.0 (2021-11-10)
+
+### Features
+
+- support reuqest body ([#5](https://github.com/Himenon/kubernetes-typescript-openapi/issues/5)) ([008d888](https://github.com/Himenon/kubernetes-typescript-openapi/commit/008d888))
+
 <a name="1.2.1"></a>
 
 ## 1.2.1 (2021-11-09)
