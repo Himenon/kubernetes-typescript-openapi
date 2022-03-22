@@ -1,7 +1,11 @@
 # @himenon/kubernetes-typescript-openapi
 
 ```bash
+# yarn
 yarn add -D @himenon/kubernetes-typescript-openapi
+
+# pnpm
+pnpm add -D @himenon/kubernetes-typescript-openapi
 ```
 
 ## Usage
@@ -59,7 +63,7 @@ fs.writeFileSync("deployment.yml", text, "utf-8");
 ## Build
 
 ```ts
-yarn run build
+pnpm build
 ```
 
 ## OpenAPI Source for Kubernetes
