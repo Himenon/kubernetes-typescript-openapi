@@ -56,11 +56,6 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
