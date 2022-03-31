@@ -1,11 +1,11 @@
 # @himenon/kubernetes-typescript-openapi
 
 ```bash
-# yarn
-yarn add -D @himenon/kubernetes-typescript-openapi
-
-# pnpm
-pnpm add -D @himenon/kubernetes-typescript-openapi
+npm  i   @himenon/kubernetes-typescript-openapi
+# or
+pnpm i   @himenon/kubernetes-typescript-openapi
+# or
+yarn add @himenon/kubernetes-typescript-openapi
 ```
 
 ## Usage
