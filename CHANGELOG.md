@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.0"></a>
+
+# 1.4.0 (2022-08-20)
+
+### Features
+
+- add v1.22, v1.23, v1.24, v1.25-rc ([#8](https://github.com/Himenon/kubernetes-typescript-openapi/issues/8)) ([e366c31](https://github.com/Himenon/kubernetes-typescript-openapi/commit/e366c31))
+
 <a name="1.3.2"></a>
 
 ## 1.3.2 (2022-03-31)
