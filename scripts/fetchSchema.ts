@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import fetch from "node-fetch";
 import * as Shell from "./tools/shell";
-import rimraf from "rimraf";
+import * as rimraf from "rimraf";
 import { versions, outputDir } from "./config";
 
 export const getKubernetesSwaggerSchema = async (version: string): Promise<any> => {
