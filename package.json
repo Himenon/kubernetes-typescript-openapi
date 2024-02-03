@@ -36,7 +36,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "pnpm ts ./scripts/build.ts",
+    "build": "tsup",
     "build:all": "run-s fetch:schemas generate:code",
     "clean": "rimraf dist",
     "fetch:schemas": "pnpm ts ./scripts/fetchSchema.ts",
