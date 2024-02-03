@@ -1,8 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import cpy from "cpy";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require("../../package.json");
+import pkg from "../../package.json" with { type: "json" };
 
 /**
  * README, LICENCE, CHANGELOG.mdをlibディレクトリに出力する

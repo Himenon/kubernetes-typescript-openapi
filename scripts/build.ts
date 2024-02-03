@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import rimraf from "rimraf";
+import * as rimraf from "rimraf";
 import { shell } from "./tools/shell";
 import { copyPackageSet } from "./tools/copyPackageSet";
 

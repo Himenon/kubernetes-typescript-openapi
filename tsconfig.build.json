@@ -4,5 +4,9 @@
     "module": "commonjs",
     "declaration": false
   },
-  "exclude": ["node_modules", "./src/**/__tests__/*"]
+  "exclude": ["node_modules", "./src/**/__tests__/*"],
+  "ts-node": {
+    "esm": true,
+    "swc": true
+  }
 }
