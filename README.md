@@ -13,7 +13,7 @@ yarn add @himenon/kubernetes-typescript-openapi
 ```ts
 import * as fs from "fs";
 import * as yaml from "js-yaml"; // yarn add js-yaml @types/js-yaml
-import type { Schemas } from "@himenon/kubernetes-typescript-openapi/dist/v1.22.3";
+import type { Schemas } from "@himenon/kubernetes-typescript-openapi/dist/v1.29.1";
 
 const podTemplateSpec: Schemas.io$k8s$api$core$v1$PodTemplateSpec = {
   metadata: {

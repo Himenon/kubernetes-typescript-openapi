@@ -81,7 +81,7 @@
     "vitest": "^1.2.2"
   },
   "engines": {
-    "pnpm": ">=6"
+    "pnpm": ">=8"
   },
   "publishConfig": {
     "access": "public"
