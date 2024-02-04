@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.4.1"></a>
+## 1.4.1 (2024-02-04)
+
+
+### Chores
+
+* **deps:** update version ([#9](https://github.com/Himenon/kubernetes-typescript-openapi/issues/9)) ([29f87cf](https://github.com/Himenon/kubernetes-typescript-openapi/commit/29f87cf))
+
+
+
+
+
 <a name="1.4.0"></a>
 
 # 1.4.0 (2022-08-20)
