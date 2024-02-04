@@ -1,10 +1,10 @@
 import * as fs from "fs";
 import * as path from "path";
-import rimraf from "rimraf";
-import { outputDir, versions, sourceOutputDir } from "./config";
+import * as rimraf from "rimraf";
+import { outputDir, sourceOutputDir, versions } from "./config";
 
 import { CodeGenerator, Option } from "@himenon/openapi-typescript-code-generator";
-import * as Templates from "@himenon/openapi-typescript-code-generator/templates";
+import * as Templates from "@himenon/openapi-typescript-code-generator/dist/templates";
 
 const task = async (filename: string, outputFilename: string): Promise<void> => {
   const option: Option = {
@@ -33,7 +33,7 @@ const task = async (filename: string, outputFilename: string): Promise<void> => 
   const code = codeGenerator.generateTypeDefinition([
     codeGenerator.getAdditionalTypeDefinitionCustomCodeGenerator(),
     {
-      generator: Templates.ApiClient.generator,
+      generator: Templates.ClassApiClient.generator,
       option: {
         additionalMethodComment: true,
       },

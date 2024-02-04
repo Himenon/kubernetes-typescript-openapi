@@ -8,21 +8,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Git Config
-        run: |
-          git config --global core.autocrlf false
-          git config --global core.eol lf
-          git config --global user.email "actions@gihub.com"
-          git config --global user.name "gh-actions"
       - uses: actions/checkout@v3
         with:
           ref: main
-      - uses: pnpm/action-setup@v2.1.0
+      - uses: ./.github/actions/initialize
+      - uses: pnpm/action-setup@v2.2.2
         with:
-          version: 6.32.3
+          version: 8.15.1
       - uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: "20.x"
           registry-url: https://npm.pkg.github.com
           scope: "@Himenon"
           cache: "pnpm"
@@ -33,28 +28,23 @@ jobs:
   release-github-registry:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Git Config
-        run: |
-          git config --global core.autocrlf false
-          git config --global core.eol lf
-          git config --global user.email "actions@gihub.com"
-          git config --global user.name "gh-actions"
       - uses: actions/checkout@v3
         with:
           ref: main
-      - uses: pnpm/action-setup@v2.1.0
+      - uses: ./.github/actions/initialize
+      - uses: pnpm/action-setup@v2.2.2
         with:
-          version: 6.32.3
+          version: 8.15.1
       - uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: "20.x"
           registry-url: https://npm.pkg.github.com
           scope: "@Himenon"
           cache: "pnpm"
       - run: pnpm install
       - run: |
           pnpm build
-          pnpm -C ./lib release:github:registry
+          pnpm run release:github:registry
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -64,16 +54,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: main
-      - uses: pnpm/action-setup@v2.1.0
+      - uses: pnpm/action-setup@v2.2.2
         with:
-          version: 6.32.3
+          version: 8.15.1
       - uses: actions/setup-node@v2
         with:
-          node-version: "16.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
           cache: "pnpm"
       - run: pnpm install
       - run: pnpm build
-      - run: pnpm -C ./lib release:npm:registry
+      - run: pnpm run release:npm:registry
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
