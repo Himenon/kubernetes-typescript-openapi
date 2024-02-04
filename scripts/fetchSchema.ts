@@ -1,9 +1,9 @@
 import * as fs from "fs";
 import * as path from "path";
 import fetch from "node-fetch";
+import { execa } from "execa";
 import * as rimraf from "rimraf";
 import { outputDir, versions } from "./config";
-import * as Shell from "./tools/shell";
 
 export const getKubernetesSwaggerSchema = async (version: string): Promise<any> => {
   const url = `https://raw.githubusercontent.com/kubernetes/kubernetes/${version}/api/openapi-spec/swagger.json`;
@@ -16,7 +16,10 @@ export const getKubernetesSwaggerSchema = async (version: string): Promise<any> 
 };
 
 const convert = async (inputFilename: string, outputFilename: string): Promise<void> => {
-  await Shell.shell(`swagger2openapi ${inputFilename} -o ${outputFilename}`);
+  await execa(`swagger2openapi ${inputFilename} -o ${outputFilename}`, {
+    stdio: ["pipe", "pipe", "inherit"],
+    shell: true,
+  });
 };
 
 const main = async () => {
