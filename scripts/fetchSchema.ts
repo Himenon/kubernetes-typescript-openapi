@@ -1,9 +1,9 @@
 import * as fs from "fs";
 import * as path from "path";
 import fetch from "node-fetch";
-import * as Shell from "./tools/shell";
 import * as rimraf from "rimraf";
-import { versions, outputDir } from "./config";
+import { outputDir, versions } from "./config";
+import * as Shell from "./tools/shell";
 
 export const getKubernetesSwaggerSchema = async (version: string): Promise<any> => {
   const url = `https://raw.githubusercontent.com/kubernetes/kubernetes/${version}/api/openapi-spec/swagger.json`;

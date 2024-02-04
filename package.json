@@ -40,15 +40,14 @@
     "build:all": "run-s fetch:schemas generate:code",
     "clean": "rimraf dist",
     "fetch:schemas": "pnpm ts ./scripts/fetchSchema.ts",
-    "format:yarn:lock": "yarn-deduplicate yarn.lock --strategy highest",
+    "format:unsafe": "biome check --apply-unsafe",
     "lerna:version:up": "lerna version --yes",
     "generate:code": "pnpm ts ./scripts/generateCode.ts",
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "pnpm publish",
-    "test": "run-s depcruise:validate",
+    "test": "run-s validate",
     "format": "biome format --write .",
     "validate": "biome check --apply .",
-    "depcruise:validate": "depcruise --validate .dependency-cruiser.js src",
     "ts": "node --no-warnings=ExperimentalWarning --experimental-specifier-resolution=node --loader ts-node/esm"
   },
   "simple-git-hooks": {
