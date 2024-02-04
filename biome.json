@@ -12,8 +12,16 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "style": {
+        "noUnusedTemplateLiteral": "off",
+        "useTemplate": "off"
+      },
       "suspicious": {
-        "noConfusingVoidType": "off"
+        "noConfusingVoidType": "off",
+        "noExplicitAny": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off"
       }
     }
   },
