@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.0"></a>
+# 2.1.0 (2024-02-04)
+
+
+### Features
+
+* update license ([#12](https://github.com/Himenon/kubernetes-typescript-openapi/issues/12)) ([079170e](https://github.com/Himenon/kubernetes-typescript-openapi/commit/079170e))
+
+
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2024-02-04)
 

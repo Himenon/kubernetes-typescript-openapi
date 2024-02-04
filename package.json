@@ -1,6 +1,6 @@
 {
   "name": "@himenon/kubernetes-typescript-openapi",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Implementation of TypeScript generated from Kubernetes OpenAPI",
   "keywords": [
     "Kubernetes",
