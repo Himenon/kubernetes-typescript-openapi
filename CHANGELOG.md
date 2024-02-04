@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2024-02-04)
+
+
+### Bug Fixes
+
+* pacakge settings ([#11](https://github.com/Himenon/kubernetes-typescript-openapi/issues/11)) ([e4d6e7f](https://github.com/Himenon/kubernetes-typescript-openapi/commit/e4d6e7f))
+
+
+### BREAKING CHANGES
+
+* using esmodule
+
+
+
+
+
 <a name="1.4.2"></a>
 ## 1.4.2 (2024-02-04)
 
