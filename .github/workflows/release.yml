@@ -12,12 +12,12 @@ jobs:
         with:
           ref: main
       - uses: ./.github/actions/initialize
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8.15.1
-      - uses: actions/setup-node@v2
+          version: 9.10.0
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: "22.x"
           registry-url: https://npm.pkg.github.com
           scope: "@Himenon"
           cache: "pnpm"
@@ -32,12 +32,12 @@ jobs:
         with:
           ref: main
       - uses: ./.github/actions/initialize
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8.15.1
-      - uses: actions/setup-node@v2
+          version: 9.10.0
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: "22.x"
           registry-url: https://npm.pkg.github.com
           scope: "@Himenon"
           cache: "pnpm"
@@ -50,20 +50,22 @@ jobs:
 
   release-npm-registry:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - uses: actions/checkout@v2
         with:
           ref: main
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8.15.1
-      - uses: actions/setup-node@v2
+          version: 9.10.0
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20.x"
+          node-version: "22.x"
           registry-url: "https://registry.npmjs.org"
           cache: "pnpm"
       - run: pnpm install
       - run: pnpm build
-      - run: pnpm run release:npm:registry
+      - run: NPM_CONFIG_PROVENANCE=true pnpm run release:npm:registry
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
