@@ -1,0 +1,5 @@
+{
+  "printWidth": 144,
+  "singleQuote": false,
+  "ignorePatterns": ["node_modules/**", "dist/**"]
+}

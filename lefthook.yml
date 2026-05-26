@@ -1,0 +1,8 @@
+pre-commit:
+  jobs:
+    - name: oxfmt format
+      skip:
+        - merge
+      glob: "*.{ts,tsx,js,jsx,mjs,cjs,css,html,json,jsonc,json5,yml,yaml,toml,md,mdx}"
+      run: pnpm run format --write --no-error-on-unmatched-pattern
+      stage_fixed: true

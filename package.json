@@ -4,17 +4,13 @@
   "description": "Implementation of TypeScript generated from Kubernetes OpenAPI",
   "keywords": [
     "Kubernetes",
-    "k8s",
     "OpenAPI",
-    "Swagger"
+    "Swagger",
+    "k8s"
   ],
   "homepage": "https://github.com/Himenon/kubernetes-typescript-openapi#readme",
   "bugs": {
     "url": "https://github.com/Himenon/kubernetes-typescript-openapi/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Himenon/kubernetes-typescript-openapi.git"
   },
   "license": "MIT",
   "author": {
@@ -22,11 +18,10 @@
     "email": "k.himeno314@gmail.com",
     "url": "https://github.com/Himenon"
   },
-  "sideEffects": false,
-  "type": "module",
-  "main": "./lib/$cjs/index.js",
-  "module": "./lib/$esm/index.js",
-  "types": "./lib/$types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Himenon/kubernetes-typescript-openapi.git"
+  },
   "directories": {
     "lib": "lib"
   },
@@ -35,6 +30,14 @@
     "package.json",
     "README.md"
   ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./lib/$cjs/index.js",
+  "module": "./lib/$esm/index.js",
+  "types": "./lib/$types/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup",
     "build:all": "run-s fetch:schemas generate:code",
@@ -46,9 +49,31 @@
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "pnpm publish",
     "test": "run-s validate",
-    "format": "biome format --write .",
+    "format": "oxfmt .",
     "validate": "biome check --apply .",
     "ts": "node --no-warnings=ExperimentalWarning --experimental-specifier-resolution=node --loader ts-node/esm"
+  },
+  "devDependencies": {
+    "@himenon/openapi-typescript-code-generator": "2.0.3",
+    "@swc/core": "^1.15.33",
+    "@types/node": "25.7.0",
+    "@typescript-eslint/eslint-plugin": "8.59.3",
+    "@typescript-eslint/parser": "8.59.3",
+    "conventional-changelog-angular-all": "1.7.0",
+    "cross-env": "^10.1.0",
+    "execa": "^9.6.1",
+    "lefthook": "^2.1.6",
+    "lerna": "9.0.7",
+    "node-fetch": "^3.3.2",
+    "npm-run-all": "4.1.5",
+    "oxfmt": "^0.49.0",
+    "oxlint": "^1.64.0",
+    "rimraf": "^6.1.3",
+    "swagger2openapi": "^7.0.8",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "6.0.3",
+    "vitest": "^4.1.6"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -58,32 +83,7 @@
       "biome format --no-errors-on-unmatched --write"
     ]
   },
-  "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "@himenon/openapi-typescript-code-generator": "1.0.2",
-    "@swc/core": "^1.3.107",
-    "@types/node": "20.11.16",
-    "@typescript-eslint/eslint-plugin": "6.20.0",
-    "@typescript-eslint/parser": "6.20.0",
-    "conventional-changelog-angular-all": "1.7.0",
-    "cross-env": "^7.0.3",
-    "execa": "^8.0.1",
-    "lerna": "8.0.2",
-    "lint-staged": "15.2.1",
-    "node-fetch": "^3.3.2",
-    "npm-run-all": "4.1.5",
-    "rimraf": "^5.0.5",
-    "simple-git-hooks": "^2.9.0",
-    "swagger2openapi": "^7.0.8",
-    "ts-node": "^10.9.2",
-    "tsup": "^8.0.1",
-    "typescript": "5.3.3",
-    "vitest": "^1.2.2"
-  },
   "engines": {
     "pnpm": ">=8"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

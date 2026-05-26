@@ -45,14 +45,14 @@ const task = async (filename: string, outputFilename: string): Promise<void> => 
 const main = async () => {
   rimraf.sync(sourceOutputDir);
   fs.mkdirSync(sourceOutputDir, { recursive: true });
-  versions.map(version => {
+  versions.map((version) => {
     const openapiSchemaFilename = path.join(outputDir, `openapi-${version}.json`);
     const outputFilename = path.join(sourceOutputDir, `${version}.ts`);
     task(openapiSchemaFilename, outputFilename);
   });
 };
 
-main().catch(error => {
+main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
