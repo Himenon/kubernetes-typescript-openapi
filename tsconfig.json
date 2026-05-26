@@ -18,7 +18,6 @@
     "rootDir": ".",
     "outDir": "lib",
     "strict": true,
-    "ignoreDeprecations": "6.0",
-    "erasableSyntaxOnly": true
+    "ignoreDeprecations": "6.0"
   }
 }
