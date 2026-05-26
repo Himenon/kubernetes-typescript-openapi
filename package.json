@@ -39,7 +39,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 tsup",
     "build:all": "run-s fetch:schemas generate:code",
     "clean": "rimraf dist",
     "fetch:schemas": "pnpm ts ./scripts/fetchSchema.ts",
@@ -49,8 +49,8 @@
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "pnpm publish",
     "test": "run-s validate",
-    "format": "oxfmt .",
-    "validate": "biome check --apply .",
+    "format": "oxfmt",
+    "validate": "oxfmt --check",
     "ts": "node --no-warnings=ExperimentalWarning --experimental-specifier-resolution=node --loader ts-node/esm"
   },
   "devDependencies": {
