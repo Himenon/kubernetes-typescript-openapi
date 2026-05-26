@@ -1,9 +1,9 @@
-import * as fs from "fs";
-import * as path from "path";
+import * as fs from "node:fs";
+import * as path from "node:path";
 import * as rimraf from "rimraf";
-import { outputDir, sourceOutputDir, versions } from "./config";
+import { outputDir, sourceOutputDir, versions } from "./config.ts";
 
-import { CodeGenerator, Option } from "@himenon/openapi-typescript-code-generator";
+import { CodeGenerator, type Option } from "@himenon/openapi-typescript-code-generator";
 import * as Templates from "@himenon/openapi-typescript-code-generator/templates";
 
 const task = async (filename: string, outputFilename: string): Promise<void> => {
