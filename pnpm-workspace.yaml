@@ -1,1 +1,7 @@
 minimumReleaseAge: 20160
+
+onlyBuiltDependencies:
+  - "@swc/core"
+  - esbuild
+  - lefthook
+  - nx

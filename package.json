@@ -75,15 +75,8 @@
     "typescript": "6.0.3",
     "vitest": "^4.1.6"
   },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
-      "biome format --no-errors-on-unmatched --write"
-    ]
-  },
   "engines": {
-    "pnpm": ">=8"
+    "node": ">=22",
+    "pnpm": ">=10.27"
   }
 }
