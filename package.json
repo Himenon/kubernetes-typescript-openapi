@@ -40,7 +40,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 tsup",
-    "build:all": "run-s fetch:schemas generate:code",
+    "build:all": "run-s fetch:schemas generate:code format",
     "clean": "rimraf dist",
     "fetch:schemas": "pnpm ts ./scripts/fetchSchema.ts",
     "format:unsafe": "biome check --apply-unsafe",
