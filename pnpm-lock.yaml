@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@himenon/openapi-typescript-code-generator':
-        specifier: 2.0.3
-        version: 2.0.3
+        specifier: 2.0.6
+        version: 2.0.6
       '@swc/core':
         specifier: ^1.15.33
         version: 1.15.33
@@ -412,8 +412,8 @@ packages:
     resolution: {integrity: sha512-GmzA9ckNokPypTg10pgpeHNQe7ph+iIKKmhKu3Ob9ANkswreCx7R3cKmY781K8QK3AqVL3xVh9A42JvIAbkkSA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@himenon/openapi-typescript-code-generator@2.0.3':
-    resolution: {integrity: sha512-rDwsjg74byBmfiTmkhoycX2+dAnu8V5oFrNtvEtVr+/kr6EKV0MUH1nVtBEFcksPdaeBbxi1gHNbRDoZDAkIOQ==}
+  '@himenon/openapi-typescript-code-generator@2.0.6':
+    resolution: {integrity: sha512-coji4a95Sjqm8W8mO6buhfStFHYn3u+6FctMRbgS5x7owE6nFCnBO3bVYCgRd8RGbdr1Chv5SwnPm5TF+2nReg==}
     engines: {node: '>=24.0.0'}
 
   '@humanwhocodes/config-array@0.11.14':
@@ -4368,7 +4368,7 @@ snapshots:
 
   '@gar/promise-retry@1.0.3': {}
 
-  '@himenon/openapi-typescript-code-generator@2.0.3':
+  '@himenon/openapi-typescript-code-generator@2.0.6':
     dependencies:
       '@types/json-schema': 7.0.15
       ajv: 8.18.0
