@@ -2,7 +2,13 @@
  * @see https://github.com/kubernetes/kubernetes/blob/master/api/openapi-spec/swagger.json
  */
 export const versions = [
-  "v1.30.0-alpha.1",
+  "v1.36.1",
+  "v1.35.5",
+  "v1.34.8",
+  "v1.33.12",
+  "v1.32.1",
+  "v1.31.2",
+  "v1.30.14",
   "v1.29.1",
   "v1.28.6",
   "v1.27.10",
