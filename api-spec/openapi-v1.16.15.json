@@ -122507,18 +122507,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "machineID",
-          "systemUUID",
-          "bootID",
-          "kernelVersion",
-          "osImage",
-          "containerRuntimeVersion",
-          "kubeletVersion",
-          "kubeProxyVersion",
-          "operatingSystem",
-          "architecture"
-        ],
+        "required": ["machineID", "systemUUID", "bootID", "kernelVersion", "osImage", "containerRuntimeVersion", "kubeletVersion", "kubeProxyVersion", "operatingSystem", "architecture"],
         "type": "object"
       },
       "io.k8s.api.core.v1.ObjectFieldSelector": {

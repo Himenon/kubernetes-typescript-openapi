@@ -1,12 +1,14 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": false,
     "skipLibCheck": true,
@@ -15,10 +17,7 @@
     "lib": ["dom", "es2023"],
     "rootDir": ".",
     "outDir": "lib",
-    "strict": true
-  },
-  "ts-node": {
-    "esm": true,
-    "swc": true,
-  },
+    "strict": true,
+    "ignoreDeprecations": "6.0"
+  }
 }

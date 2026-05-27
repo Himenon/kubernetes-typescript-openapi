@@ -4,69 +4,48 @@ All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 <a name="2.1.1"></a>
-## 2.1.1 (2024-12-25)
 
+## 2.1.1 (2024-12-25)
 
 ### Bug Fixes
 
-* packaging content ([#14](https://github.com/Himenon/kubernetes-typescript-openapi/issues/14)) ([ebc8ca7](https://github.com/Himenon/kubernetes-typescript-openapi/commit/ebc8ca7))
-
-
-
-
+- packaging content ([#14](https://github.com/Himenon/kubernetes-typescript-openapi/issues/14)) ([ebc8ca7](https://github.com/Himenon/kubernetes-typescript-openapi/commit/ebc8ca7))
 
 <a name="2.1.0"></a>
-# 2.1.0 (2024-02-04)
 
+# 2.1.0 (2024-02-04)
 
 ### Features
 
-* update license ([#12](https://github.com/Himenon/kubernetes-typescript-openapi/issues/12)) ([079170e](https://github.com/Himenon/kubernetes-typescript-openapi/commit/079170e))
-
-
-
-
+- update license ([#12](https://github.com/Himenon/kubernetes-typescript-openapi/issues/12)) ([079170e](https://github.com/Himenon/kubernetes-typescript-openapi/commit/079170e))
 
 <a name="2.0.0"></a>
-# 2.0.0 (2024-02-04)
 
+# 2.0.0 (2024-02-04)
 
 ### Bug Fixes
 
-* pacakge settings ([#11](https://github.com/Himenon/kubernetes-typescript-openapi/issues/11)) ([e4d6e7f](https://github.com/Himenon/kubernetes-typescript-openapi/commit/e4d6e7f))
-
+- pacakge settings ([#11](https://github.com/Himenon/kubernetes-typescript-openapi/issues/11)) ([e4d6e7f](https://github.com/Himenon/kubernetes-typescript-openapi/commit/e4d6e7f))
 
 ### BREAKING CHANGES
 
-* using esmodule
-
-
-
-
+- using esmodule
 
 <a name="1.4.2"></a>
+
 ## 1.4.2 (2024-02-04)
 
-
 ### Chores
 
-* command ([#10](https://github.com/Himenon/kubernetes-typescript-openapi/issues/10)) ([ed26d8d](https://github.com/Himenon/kubernetes-typescript-openapi/commit/ed26d8d))
-
-
-
-
+- command ([#10](https://github.com/Himenon/kubernetes-typescript-openapi/issues/10)) ([ed26d8d](https://github.com/Himenon/kubernetes-typescript-openapi/commit/ed26d8d))
 
 <a name="1.4.1"></a>
-## 1.4.1 (2024-02-04)
 
+## 1.4.1 (2024-02-04)
 
 ### Chores
 
-* **deps:** update version ([#9](https://github.com/Himenon/kubernetes-typescript-openapi/issues/9)) ([29f87cf](https://github.com/Himenon/kubernetes-typescript-openapi/commit/29f87cf))
-
-
-
-
+- **deps:** update version ([#9](https://github.com/Himenon/kubernetes-typescript-openapi/issues/9)) ([29f87cf](https://github.com/Himenon/kubernetes-typescript-openapi/commit/29f87cf))
 
 <a name="1.4.0"></a>
 
