@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.1.2"></a>
+## 2.1.2 (2026-05-27)
+
+
+### Chores
+
+* update dependencies ([#15](https://github.com/Himenon/kubernetes-typescript-openapi/issues/15)) ([ffa14b8](https://github.com/Himenon/kubernetes-typescript-openapi/commit/ffa14b8))
+
+
+
+
+
 <a name="2.1.1"></a>
 
 ## 2.1.1 (2024-12-25)
