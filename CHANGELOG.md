@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.2.0"></a>
+# 2.2.0 (2026-05-27)
+
+
+### Features
+
+* add Kubernetes API schemas for v1.31 through v1.36 and upgrade v1.30 to stable ([#16](https://github.com/Himenon/kubernetes-typescript-openapi/issues/16)) ([d30d68a](https://github.com/Himenon/kubernetes-typescript-openapi/commit/d30d68a))
+
+
+
+
+
 <a name="2.1.2"></a>
 
 ## 2.1.2 (2026-05-27)
